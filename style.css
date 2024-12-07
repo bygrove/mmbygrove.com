@@ -1,8 +1,5 @@
 /*-----------------------------------------------------------------------------------
-	Portfolio 2
-	About: A shiny new Blocs website.
-	Author: Norman Sheeran
-	Version: 1.0
+	M.M.Bygrove
 	Built with Blocs
 -----------------------------------------------------------------------------------*/
 body{
@@ -241,12 +238,6 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 	border-color:rgba(0,0,0,.3);
 }
 
-/* Row Margin Offsets */
-
-.voffset{
-	margin-top:30px;
-}
-
 
 /* = NavBar
 -------------------------------------------------------------- */
@@ -369,14 +360,6 @@ button{
 }
 .dropdown-menu .divider-h{
 	margin:0;
-}
-
-/* = Forms
--------------------------------------------------------------- */
-
-.form-control{
-	border-color:rgba(0,0,0,.1);
-	box-shadow:none;
 }
 
 
@@ -561,6 +544,9 @@ a[data-lightbox]:hover img{
 .show-controls:not(.hide-left-control) > .blocs-scroll-control-prev, .show-controls:not(.hide-right-control) > .blocs-scroll-control-next{
 	opacity:1!important;
 }
+.blocs-horizontal-scroll-area img.lazyload{
+	height:0;
+}
 
 /* = Custom Styling
 -------------------------------------------------------------- */
@@ -692,6 +678,60 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	padding-top:20px;
 	margin:0px 0px 0px 0px;
 }
+.img-indulgen-style{
+	width:285px;
+}
+.blocs-card-height{
+	height:25%;
+}
+.mp-scroll-container{
+	;
+}
+.mp-scroll-img{
+	height:30vw;
+	width:auto;
+}
+.mp-bloc-card-height{
+	;
+}
+.link-style{
+	width:20px;
+}
+.my-header-small-scroll{
+	font-family:"the-seasons";
+	letter-spacing:2px;
+	font-size:20px;
+	padding-top:2em;
+}
+.img-totheco-style{
+	width:290px;
+}
+.link-bloc-3-style{
+	width:0px;
+}
+.link-bloc-6-style{
+	width:20px;
+}
+.container-div-bloc-3-style{
+	width:100%;
+}
+.mp-bloc-divider{
+	border-style:solid;
+	border-color:var(--swatch-var-3409);
+	border-width:3px 0px 0px 0px;
+}
+.navbar-logo{
+	text-transform:none;
+	text-decoration:none;
+	font-size:20px;
+}
+.divider-style{
+	width:25%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#AE7C51;
+	height:3px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -709,6 +749,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	
 	--swatch-var-7343:#000000;
 	
+	--swatch-var-1964:rgba(35,36,35,0.9);
+	
 }
 
 
@@ -725,9 +767,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .tc-6728{
 	color:var(--swatch-var-6728)!important;
-}
-.tc-7343{
-	color:var(--swatch-var-7343)!important;
 }
 .tc-7376{
 	color:var(--swatch-var-7376)!important;
@@ -755,19 +794,19 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Bloc image backgrounds */
 
-.bg-Hero{
-	background-image:url("img/Hero.jpeg");
-	background-image: -webkit-image-set(url("img/Hero.webp") 1x,
-url("img/Hero.webp") 2x);background-image: image-set(url("img/Hero.jpeg") 1x,
-url("img/Hero.jpeg") 2x,url("img/Hero.webp") 1x,
-url("img/Hero.webp") 2x);
+.bg-hero{
+	background-image:url("img/hero.jpeg");
+	background-image: -webkit-image-set(url("img/hero.webp") 1x,
+url("img/hero.webp") 2x);background-image: image-set(url("img/hero.jpeg") 1x,
+url("img/hero.jpeg") 2x,url("img/hero.webp") 1x,
+url("img/hero.webp") 2x);
 }
-.bg-About{
-	background-image:url("img/About.jpeg");
-	background-image: -webkit-image-set(url("img/About.webp") 1x,
-url("img/About.webp") 2x);background-image: image-set(url("img/About.jpeg") 1x,
-url("img/About.jpeg") 2x,url("img/About.webp") 1x,
-url("img/About.webp") 2x);
+.bg-about{
+	background-image:url("img/about.jpeg");
+	background-image: -webkit-image-set(url("img/about.webp") 1x,
+url("img/about.webp") 2x);background-image: image-set(url("img/about.jpeg") 1x,
+url("img/about.jpeg") 2x,url("img/about.webp") 1x,
+url("img/about.webp") 2x);
 }
 
 
@@ -863,6 +902,12 @@ url("img/About.webp") 2x);
 	.blocs-card-width{
 		width:50%;
 	}
+	.blocs-card-height{
+		width:50%;
+	}
+	.mp-scroll-img{
+		height:65vw;
+	}
 	
 }
 
@@ -886,6 +931,9 @@ url("img/About.webp") 2x);
 		font-size:30px;
 	}
 	.blocs-card-width{
+		width:50%;
+	}
+	.blocs-card-height{
 		width:50%;
 	}
 	
@@ -924,6 +972,16 @@ url("img/About.webp") 2x);
 	}
 	.blocs-card-width{
 		width:100%;
+	}
+	.blocs-card-height{
+		width:100%;
+	}
+	.mp-scroll-img{
+		max-height:100vw;
+		height:auto;
+	}
+	.navbar-logo{
+		font-size:18px;
 	}
 	
 }
