@@ -712,6 +712,26 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .link-bloc-6-style{
 	width:20px;
 }
+.container-div-bloc-3-style{
+	width:100%;
+}
+.mp-bloc-divider{
+	border-style:solid;
+	border-color:var(--swatch-var-3409);
+	border-width:3px 0px 0px 0px;
+}
+.navbar-logo{
+	text-transform:none;
+	text-decoration:none;
+	font-size:20px;
+}
+.divider-style{
+	width:25%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#AE7C51;
+	height:3px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -728,6 +748,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	--swatch-var-3409:rgba(174,124,81,1.00);
 	
 	--swatch-var-7343:#000000;
+	
+	--swatch-var-1964:rgba(35,36,35,0.9);
 	
 }
 
@@ -957,6 +979,9 @@ url("img/about.webp") 2x);
 	.mp-scroll-img{
 		max-height:100vw;
 		height:auto;
+	}
+	.navbar-logo{
+		font-size:18px;
 	}
 	
 }
